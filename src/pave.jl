@@ -1,6 +1,6 @@
 "Outer paving with a contractor C"
 
-function outer_pave{N,T}(C, working::Vector{IntervalBox{N,T}}, ϵ)
+function outer_pave(C, working::Vector{IntervalBox{N,T}}, ϵ) where {N,T}
 
     outer_list = SubPaving{N,T}()
 
